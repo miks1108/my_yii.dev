@@ -8,5 +8,3 @@ return [
     'password' => 'max5549048965ned',
     'charset' => 'utf8',
 ];
-
-//test for commit;
