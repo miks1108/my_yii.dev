@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\about\About;
 
 class SiteController extends Controller
 {
@@ -89,6 +90,9 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
-        return $this->render('about');
+
+        $about = About::find()->all();
+
+        return $this->render('about', ['about' => $about]);
     }
 }
