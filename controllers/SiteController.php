@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Categories;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -9,6 +10,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\about\About;
+use app\models\Content;
 
 class SiteController extends Controller
 {
@@ -91,8 +93,24 @@ class SiteController extends Controller
     public function actionAbout()
     {
 
-        $about = About::find()->all();
+        $content = Content::findOne(1);
+        $cats = $content->cats;
+        print_r($cats);
+        die();
 
-        return $this->render('about', ['about' => $about]);
+        return $this->render('about', ['test' => $cats]);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

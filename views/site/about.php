@@ -1,15 +1,23 @@
-<div>
-
-    <? foreach($about as $a) { ?>
-
-        <p>
-            <span><?= $a->id ?></span>
-            <span><?= $a->email ?></span>
-        </p>
-
-    <? } ?>
-
-</div>
+<!--<div>-->
+<!---->
+<!--    --><?// foreach($test as $t) { ?>
+<!---->
+<!--        <p>-->
+<!--            <span>--><?//= $t->id ?><!--</span>-->
+<!--            <span> -> </span>-->
+<!--            --><?// if(!empty($t->email)) { ?>
+                <span><?= $test->title ?></span>
+<!--            --><?// }
+//            else { ?>
+<!--                <span>-->
+<!--                    <i><small>empty</small></i>-->
+<!--                </span>-->
+<!--            --><?// } ?>
+<!--        </p>-->
+<!---->
+<!--    --><?// } ?>
+<!---->
+<!--</div>-->
 
 
 
