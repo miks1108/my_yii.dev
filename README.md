@@ -13,6 +13,8 @@ features to your application.
 [![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
 
 DIRECTORY STRUCTURE
+
+adfasf
 -------------------
 
       assets/             contains assets definition
